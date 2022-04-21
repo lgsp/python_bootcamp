@@ -1,5 +1,0 @@
-import re
-
-
-rand_str = "F.B.I. I.R.S. CIA"
-print("Matches:", len(re.findall(".\..\..", rand_str)))
