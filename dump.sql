@@ -1,0 +1,11 @@
+BEGIN TRANSACTION;
+CREATE TABLE employees (id integer primary key, name text);
+INSERT INTO "employees" VALUES(1,'Max Eisenhardt');
+INSERT INTO "employees" VALUES(2,'Pietro Maximoff');
+INSERT INTO "employees" VALUES(3,'Wanda Maximoff');
+INSERT INTO "employees" VALUES(4,'Mortimer Toynbee');
+INSERT INTO "employees" VALUES(5,'Jason Wyngarde');
+CREATE TABLE employees2(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, f_name TEXT NOT NULL, l_name TEXT NOT NULL, age INT NOT NULL, address TEXT, salary REAL, hire_date TEXT, 'image' BLOB DEFAULT NULL);
+DELETE FROM "sqlite_sequence";
+INSERT INTO "sqlite_sequence" VALUES('employees2',1);
+COMMIT;
